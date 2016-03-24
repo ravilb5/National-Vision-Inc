@@ -1,0 +1,2 @@
+TDID,Run,DefectID,TABNAME,SUB_LINK,PRODUCT,HEADER,tabName,productname,position,firstName,lastName,Password,ReEnterPassword,Email
+1,YES,,eyeglasses,all glasses,Agility 7,Review Your Selections,eyeglasses,Agility 7,7,John,nash,Password@123,Password@123,test123@gmail.com
