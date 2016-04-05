@@ -45,7 +45,7 @@
     </object>
   </page>
 
-  <page title ="This is Home Page">
+  <page title ="This is Home Page" >
     <object>
       <name>shoppingcart_lnk</name>
       <identifyBy>xpath</identifyBy>
@@ -71,12 +71,6 @@
     </object>
 
     <object>
-      <name>searchstore_zip_txt</name>
-      <identifyBy>id</identifyBy>
-      <value>postalcode</value>
-    </object>
-
-    <object>
       <name>searchstore_city_txt</name>
       <identifyBy>id</identifyBy>
       <value>city</value>
@@ -99,21 +93,6 @@
       <identifyBy>xpath</identifyBy>
       <value>//div[@class='eyeclub-banner col-xs-12 hidden-xs desktop']</value>
     </object>
-
-    <object>
-      <name>MyFavoriteLink</name>
-      <identifyBy>id</identifyBy>
-      <value>headerFavoriteLink</value>
-    </object>
-
-
-    <object>
-      <name>ClickCreateProfileButton</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//input[@class='btn accent submitCreateProfile']</value>
-    </object>
-
-    
   </page>
 
   <page title ="This is MyAccount Page">
@@ -141,11 +120,105 @@
     </object>
   </page>
 
+  <page title ="Contact Page">
+    
+    <object>
+      <name>contactus_form</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//table[@class='formTable']</value>
+    </object>
+    
+    <object>
+      <name>howtocontact_dd</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Method</value>
+    </object>
+
+    <object>
+      <name>contactfirstname_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_fName</value>
+    </object>
+
+    <object>
+      <name>contactlastname_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_lName</value>
+    </object>
+
+    <object>
+      <name>contactemail_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Email</value>
+    </object>
+
+    <object>
+      <name>contactphone_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Phone</value>
+    </object>
+
+    <object>
+      <name>contactaddress_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Address</value>
+    </object>
+
+    <object>
+      <name>contactcity_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_City</value>
+    </object>
+
+    <object>
+      <name>contactstate_dd</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_State</value>
+    </object>
+
+    <object>
+      <name>contactzip_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Zip</value>
+    </object>
+
+    <object>
+      <name>reasonforcontact_dd</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_ReasonForContact</value>
+    </object>
+
+    <object>
+      <name>suggestions_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_Comments</value>
+    </object>
+
+    <object>
+      <name>contactsubmit_btn</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_btnGo</value>
+    </object>
+    
+    <object>
+      <name>contacterrormsg_lbl</name>
+      <identifyBy>id</identifyBy>
+      <value>ContentPlaceHolderDefault_Content_ctl08_ContactUsControl_18_ValidationSummary1</value>
+    </object>
+
+    <object>
+      <name>contactformsuccess_lbl</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@id='mainBody']/h1[text()='Thank You']</value>
+    </object>
+    
+  </page>
+  
   <page title ="Order Details Page">
     <object>
       <name>backtoorder_lnk</name>
       <identifyBy>xpath</identifyBy>
-      <value>//a[@href='/MyAccount/']</value>
+      <value>//a[@href='/MyAccount/' or @href='/shop/MyAccount']</value>
     </object>
 
     <object>
@@ -376,6 +449,7 @@
     </object>
    
   </page>  
+  
   <page title ="Address Book Page">
 
     <object>
@@ -434,39 +508,18 @@
 
   </page>
 
-  <page title="Patient Details Tab">
-    <object>
-      <name>newpatientbmonth_txt</name>
-      <identifyBy>id</identifyBy>
-      <value>birthMonth</value>
-    </object>
-
-    <object>
-      <name>newpatientbday_txt</name>
-      <identifyBy>id</identifyBy>
-      <value>birthDay</value>
-    </object>
-
-    <object>
-      <name>newpatientbyear_txt</name>
-      <identifyBy>id</identifyBy>
-      <value>birthYear</value>
-    </object>
-
-    <object>
-      <name>newpatientsave_btn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//span[normalize-space()='Add a new Patient']/parent::button[contains(@ng-hide, 'vm.showNewForm')]</value>
-    </object>
-
-  </page>
-
   <page title="ContactLensesProductDisplay Page">
 
     <object>
       <name>productimage_img</name>
       <identifyBy>xpath</identifyBy>
       <value>//div[@class='lens-content col-md-12']/descendant::a[@class='js-modal-trigger']/img[@class='responsive']</value>
+    </object>
+
+    <object>
+      <name>premiumlense_lbl</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='product-information-warning']</value>
     </object>
 
     <object>
@@ -734,19 +787,6 @@
     </object>
 
     <object>
-      <name>view_btn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//a[@class='btn mid favorite-view']</value>
-    </object>
-
-    <object>
-      <name>remove_btn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//input[@class='favorite-remove btn accent']</value>
-    </object>
-
-
-    <object>
       <name>addtofavorites_icon</name>
       <identifyBy>xpath</identifyBy>
       <value>//div[@class='product-desktop-row']/descendant::span[@class='favorite-star-wrap']</value>
@@ -754,99 +794,12 @@
 
   </page>
 
-
   <page  title="EyeGlassesProductDisplay Page">
     <object>
       <name>zoomin_btn</name>
       <identifyBy>id</identifyBy>
       <value>zoom-icon</value>
     </object>
-
-    <object>
-      <name>GetStartedNow</name>
-      <identifyBy>id</identifyBy>
-      <value>dittoCreateButton</value>
-    </object>
-    <object>
-      <name>DittoLoginLink</name>
-      <identifyBy>id</identifyBy>
-      <value>dittoLoginButton</value>
-    </object>
-    <object>
-      <name>DittoPopupCloseBbtn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//div[@id='tryOnIntro']//span[@class='icon-cancel-circle']</value>
-    </object>
-
-    <object>
-      <name>DittoPopupHeading</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//h1[text()='Log In or Create Your Profile']</value>
-    </object>
-    <object>
-      <name>DittoCreateProfileBtn</name>
-      <identifyBy>id</identifyBy>
-      <value>dittoCreateProfile</value>
-    </object>
-    <object>
-      <name>DittoSigninBtn</name>
-      <identifyBy>id</identifyBy>
-      <value>pseudoSignIn</value>
-    </object>
-
-    <object>
-      <name>DittoFormFirstName</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//input[@name='FirstName']</value>
-    </object>
-
-    <object>
-      <name>DittoFormLastName</name>
-      <identifyBy>xpath</identifyBy>
-      <value> //input[@name='LastName']</value>
-    </object>
-
-    <object>
-      <name>DittoFormPwd</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//input[@name='Password1']</value>
-    </object>
-
-    <object>
-      <name>DittoFormRenterPwd</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//input[@name='Password2']</value>
-    </object>
-
-    <object>
-      <name>DittoFormEmail</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//form[@id='Registration']//input[@name='EmailAddress']</value>
-    </object>
-    <object>
-      <name>TermsAndConditionChkBox</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//label[@for='TermsAndConditions']/input</value>
-    </object>
-    <object>
-      <name>CreateProfileBtn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//a[text()='Create Profile']</value>
-    </object>
-
-    <object>
-      <name>ManageTryOnBtn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//button[text()='Manage Try Ons']</value>
-    </object>
-    <object>
-      <name>CreateTryOnBtn</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//button[text()='create Try On']</value>
-    </object>
-
-
-    
 
     <object>
       <name>eyeglassproductimage_img</name>
@@ -949,7 +902,7 @@
     <object>
       <name>printtostore_btn</name>
       <identifyBy>xpath</identifyBy>
-      <value>//span[@class='icon-printer']</value>
+      <value>//button[@class='btn mid summary-page__print-button']</value>
     </object>
 
     <object>
@@ -1019,13 +972,6 @@
       <value>//select[@ng-model='vm.selection.cylinder.left']</value>
     </object>
 
-    <object>
-      <name>tryon_img</name>
-      <identifyBy>xpath</identifyBy>
-      <value>//span[text()='Try On']</value>
-    </object>
-  </page>    
-    
 
     <object>
       <name>eyerightaxis_dd</name>
@@ -1044,11 +990,7 @@
       <identifyBy>xpath</identifyBy>
       <value>//select[@ng-model='vm.selection.pd']</value>
     </object>
-
-
-
-
- 
+  </page>
 
   <page  title="BeginOrder Page">
     <object>
@@ -1162,19 +1104,19 @@
     <object>
       <name>returnemail_btn</name>
       <identifyBy>xpath</identifyBy>
-      <value>//aside[@class='standard-right-col right-col col-sm-3 hidden-xs']/descendant::input[@id='Email']</value>
+      <value>//aside[starts-with(@class,'standard-right-col right-col')]/descendant::input[@id='Email']</value>
     </object>
 
     <object>
       <name>returnpwd_btn</name>
       <identifyBy>xpath</identifyBy>
-      <value>//aside[@class='standard-right-col right-col col-sm-3 hidden-xs']/descendant::input[@id='Password']</value>
+      <value>//aside[starts-with(@class,'standard-right-col right-col')]/descendant::input[@id='Password']</value>
     </object>
 
     <object>
       <name>returnlogin_btn</name>
       <identifyBy>xpath</identifyBy>
-      <value>//aside[@class='standard-right-col right-col col-sm-3 hidden-xs']/descendant::input[@value='log in']</value>
+      <value>//aside[starts-with(@class,'standard-right-col right-col')]/descendant::input[@value='log in']</value>
     </object>
 
     <object>
@@ -1382,6 +1324,13 @@
       <identifyBy>xpath</identifyBy>
       <value>//table[@id='stores']/descendant::input[@type='radio'][1]</value>
     </object>
+
+    <object>
+      <name>faxform_lnk</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@id='doctor-fax-prescription']/descendant::a[text()='fax form']</value>
+    </object>
+    
   </page>
 
   <page  title="EyeCareClub Page">
@@ -1627,6 +1576,13 @@
       <identifyBy>xpath</identifyBy>
       <value>//ul[@class='col-xs-12'][3]/li[2]</value>
     </object>
+
+    <object>
+      <name>trackyourorder_lnk</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//a[text()='Track Your Order']</value>
+    </object>
+    
   </page>
 
   <page title ="This is Eye care club page">
@@ -1708,7 +1664,7 @@
   </page>
 
   <page title="MyAccount-ReOrder Page">
-    
+
     <object>
       <name>reorder_lab</name>
       <identifyBy>xpath</identifyBy>
@@ -1726,7 +1682,7 @@
       <identifyBy>xpath</identifyBy>
       <value>//div[@class='col-sm-6 shipping-info']</value>
     </object>
-    
+
     <object>
       <name>billinginfo_chk</name>
       <identifyBy>xpath</identifyBy>
@@ -1750,19 +1706,19 @@
       <identifyBy>id</identifyBy>
       <value>need-to-update-my-payment-information</value>
     </object>
-    
+
     <object>
       <name>save_btn</name>
       <identifyBy>xpath</identifyBy>
       <value>//button[@class='btn smallest accent'][text()=' Save']</value>
     </object>
-    
+
     <object>
       <name>removeLens_btn</name>
       <identifyBy>xpath</identifyBy>
       <value>//button[@class='btn smallest accent'][text()=' Remove']</value>
     </object>
-    
+
     <object>
       <name>cancel_btn</name>
       <identifyBy>xpath</identifyBy>
@@ -1858,7 +1814,7 @@
       <identifyBy>xpath</identifyBy>
       <value>//button[@class='btn mid ng-isolate-scope']</value>
     </object>
-    
+
     <object>
       <name>canceladress_btn</name>
       <identifyBy>xpath</identifyBy>
@@ -1882,8 +1838,123 @@
       <identifyBy>id</identifyBy>
       <value>yes-email-remind-me</value>
     </object>
-    
+  </page>
 
+  <page title="MyAccountPatients Page">
+
+    <object>
+      <name>addnewpatient_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//button[@ng-hide='vm.showNewForm ']</value>
+    </object>
+
+    <object>
+      <name>patientfirstnm_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>firstName</value>
+    </object>
+
+    <object>
+      <name>patientmiddlenm_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>middleInitial</value>
+    </object>
+
+    <object>
+      <name>patientlastnm_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>lastName</value>
+    </object>
+
+    <object>
+      <name>patientbirthmth_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//form[@name='createPatient']/select[@id='birthMonth']</value>
+    </object>
+
+    <object>
+      <name>patientbirthday_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//form[@name='createPatient']/select[@id='birthDay']</value>
+    </object>
+
+    <object>
+      <name>patientbirthyear_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//form[@name='createPatient']/select[@id='birthYear']</value>
+    </object>
+
+    <object>
+      <name>newpatientcancel_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//a[starts-with(@class,'add-new-patient cancel-button')]</value>
+    </object>
+
+    <object>
+      <name>newpatientadd_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//button[starts-with(@class,'add-new-patient default-button')]</value>
+    </object>
+    
+    <object>
+      <name>editedpatientcancel_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::button[text()='Cancel']</value>
+    </object>
+
+    <object>
+      <name>editedpatientsave_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::button[text()='Save']</value>
+    </object>
+
+    <object>
+      <name>editedpatientfirstname_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::input[@name='firstName']</value>
+    </object>
+
+    <object>
+      <name>editedpatientlastname_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::input[@name='lastName']</value>
+    </object>
+
+    <object>
+      <name>editedbirthmth_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::select[@id='birthMonth']</value>
+    </object>
+
+    <object>
+      <name>editedbirthday_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::select[@id='birthDay']</value>
+    </object>
+    
+    <object>
+      <name>editedbirthyear_dd</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='slider clearfix']/descendant::select[@id='birthYear']</value>
+    </object>
+
+    <object>
+      <name>removeconfirmation_lbl</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='account-confirm-delete row']/div/div[text()='You are about to delete this patient, are you sure?']</value>
+    </object>
+
+    <object>
+      <name>patremoveconfirm_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='account-confirm-delete row']/descendant::button[text()='Confirm']</value>
+    </object>
+
+    <object>
+      <name>patremovecancel_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='account-confirm-delete row']/descendant::button[text()='Cancel']</value>
+    </object>
   </page>
   
   <page title="New Account-Register Page">
@@ -2010,6 +2081,22 @@
 
   </page>
 
+  <page  title="SaveMoney Page">
+
+    <object>
+      <name>findstore_txt</name>
+      <identifyBy>id</identifyBy>
+      <value>postalcode</value>
+    </object>
+
+    <object>
+      <name>findstorego_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//form[@id='twoPairFormID2']/descendant::button[starts-with(normalize-space(),'go')]</value>
+    </object>
+    
+  </page>
+  
   <page  title="AddressBook Page">
 
     <object>
@@ -2115,11 +2202,138 @@
     </object>
 
     <object>
-    <name>removepopup_lab</name>
-    <identifyBy>xpath</identifyBy>
-    <value>//span[contains(text(), 'You are about to delete this address')]</value>
-  </object>
-    
+      <name>removepopup_lab</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//span[contains(text(), 'You are about to delete this address')]</value>
+    </object>
+
+    <object>
+      <name>existingorderremovepopup_lab</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//span[text()='We are unable to remove addresses that are associated with active orders.']</value>
+    </object>
+
   </page>
-  
+
+  <page  title="TryOn Page">
+
+    <object>
+      <name>tryonsdisplay_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='tryon ng-scope']/descendant::div[contains(@class, 'tryon-container ng-scope')]</value>
+    </object>
+
+    <object>
+      <name>shopwithditto_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@class='ditto-buttons']/descendant::button[text()='Shop with  ditto']</value>
+    </object>
+  </page>
+
+  <page  title="Favorites Page">
+    <object>
+      <name>favoritprinttostore_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//a[contains(@class,'pull-right print-favorites-btn')]</value>
+    </object>
+    <object>
+      <name>existingemail_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//input[@id='email']</value>
+    </object>
+
+    <object>
+      <name>existingpwd_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//input[@id='password']</value>
+    </object>
+
+    
+
+
+    <object>
+      <name>view_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//a[@class='btn mid favorite-view']</value>
+    </object>
+    
+    <object>
+      <name>remove_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//input[@class='favorite-remove btn accent']</value>
+    </object>
+
+    <object>
+      <name>getstartednow_btn</name>
+      <identifyBy>id</identifyBy>
+      <value>dittoCreateButton</value>
+    </object>
+
+    <object>
+      <name>dittologin_lnk</name>
+      <identifyBy>id</identifyBy>
+      <value>dittoLoginButton</value>
+    </object>
+
+    <object>
+      <name>dittopopupclose_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//div[@id='dittoIntro']/div[@class='vto-close-btn']/descendant::span[@class='icon-cancel-circle']</value>
+    </object>
+
+    <object>
+      <name>dittocreateprofile_btn</name>
+      <identifyBy>id</identifyBy>
+      <value>dittoCreateProfile</value>
+    </object>
+
+    <object>
+      <name>dittoformfirstname_txt</name>
+      <identifyBy>name</identifyBy>
+      <value>FirstName</value>
+    </object>
+
+    <object>
+      <name>dittoformlastname_txt</name>
+      <identifyBy>name</identifyBy>
+      <value>LastName</value>
+    </object>
+
+    <object>
+      <name>dittoformpwd_txt</name>
+      <identifyBy>name</identifyBy>
+      <value>Password1</value>
+    </object>
+
+    <object>
+      <name>dittoformrenterpwd_txt</name>
+      <identifyBy>name</identifyBy>
+      <value>Password2</value>
+    </object>
+
+    <object>
+      <name>dittoformemail_txt</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//label[@for='EmailAddress']/input</value>
+    </object>
+
+    <object>
+      <name>termsandcondition_chkbox</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//label[@for='TermsAndConditions']/input</value>
+    </object>
+
+    <object>
+      <name>clickcreateprofile_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//input[@value='Create Profile']</value>
+    </object>
+
+    <object>
+      <name>managetryon_btn</name>
+      <identifyBy>xpath</identifyBy>
+      <value>//button[text()='Manage Try Ons']</value>
+    </object>
+
+  </page>
 </PageFactory>
